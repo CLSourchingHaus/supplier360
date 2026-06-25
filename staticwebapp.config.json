@@ -4,6 +4,12 @@
       "route": "/*",
       "redirect": "/.auth/login/aad",
       "statusCode": 302
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "authenticated"
+      ]
     }
   ]
 }
