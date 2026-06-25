@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier 360 · Sustainability Tool</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div id="app"></div>
+
+  <!--
+    Script load order matters — each file builds on the previous.
+    1. Data files populate IND, PILLARS, LEARN, CSTEPS globals.
+    2. state.js / router.js consume those globals.
+    3. Page renderers consume state + data.
+    4. main.js kicks everything off.
+  -->
+
+  <!-- Data layer -->
+  <script src="js/data/structure.js"></script>
+  <script src="js/data/env.js"></script>
+  <script src="js/data/social.js"></script>
+  <script src="js/data/gov.js"></script>
+  <script src="js/data/learning.js"></script>
+  <script src="js/data/profile-steps.js"></script>
+
+  <!-- Core -->
+  <script src="js/state.js"></script>
+  <script src="js/router.js"></script>
+
+  <!-- Page renderers -->
+  <script src="js/pages/welcome.js"></script>
+  <script src="js/pages/profile.js"></script>
+  <script src="js/pages/roadmap.js"></script>
+  <script src="js/pages/category.js"></script>
+  <script src="js/pages/flow.js"></script>
+  <script src="js/pages/learning.js"></script>
+  <script src="js/pages/report.js"></script>
+
+  <!-- Entry point -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
