@@ -6,6 +6,12 @@
         "anonymous",
         "authenticated"
       ]
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "authenticated"
+      ]
     }
   ]
 }
